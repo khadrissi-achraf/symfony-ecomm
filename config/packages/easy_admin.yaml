@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        Product:
+            class: App\Entity\Product
+            label: 'Produits'
+            form:
+                fields:
+                    - { property: 'name', label: 'Nom' }
+                    - { property: 'price', label: 'Prix' }
+                    - { property: 'createdAt', label: 'Date de création', type: 'datetime' }
