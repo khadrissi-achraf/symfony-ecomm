@@ -31,8 +31,7 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('La Boot\'Ique');
-
+        ->setTitle('<a href="' . $this->generateUrl('home') . '" style="padding: 1px 0 9px;">H&A</a>');
     }
 
     public function configureMenuItems(): iterable
